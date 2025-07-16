@@ -1,0 +1,20 @@
+# Example CBC configuration
+
+# Static provider definitions
+providers:
+  redmine:
+    provider_type: redmine
+    connection:
+      url: https://redstone.redminecloud.net
+      api_key: YOUR_API_KEY_HERE
+  
+  filesystem:
+    provider_type: filesystem
+    connection:
+      path: /Users/username/projects
+
+# Discovery configuration
+discovery:
+  enable_roots_discovery: true
+  enable_tools_discovery: true
+  enable_resources_discovery: false
